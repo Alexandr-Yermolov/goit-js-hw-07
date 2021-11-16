@@ -34,8 +34,5 @@ function onGalleryContainerClick(evt) {
         return;
     }
         
-    let gallery = new SimpleLightbox('.gallery a');
-gallery.on('captionsData', function () {
-
-});
+var lightbox = new SimpleLightbox('.gallery a', { /* options */ });
 }
