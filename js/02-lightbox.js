@@ -33,6 +33,11 @@ function onGalleryContainerClick(evt) {
     if (evt.target.nodeName !== 'IMG') {
         return;
     }
-        
-var lightbox = new SimpleLightbox('.gallery a', { /* options */ });
+    
+    const img = event.target
+console.log(img.dataset.alt);
+    var lightbox = new SimpleLightbox('.gallery a', {
+captionsData: 'alt', captionDelay: 250
+        /* options */
+});
 }

@@ -29,8 +29,7 @@ const cards = galleryItems.map(makeGallery)
 galleryContainer.append(...cards)
 
 ;
-galleryContainer.addEventListener('click', onGalleryContainerClick)
-    ;
+galleryContainer.addEventListener('click', onGalleryContainerClick);
 
 
 function onGalleryContainerClick(evt) {
@@ -38,10 +37,11 @@ function onGalleryContainerClick(evt) {
     if (evt.target.nodeName !== 'IMG') {
         return;
     }
-        
+
     const instance = basicLightbox.create(`
     <img src="${evt.target.dataset.source}" width="800" height="600">
 `)
 
     instance.show()
 }
+
